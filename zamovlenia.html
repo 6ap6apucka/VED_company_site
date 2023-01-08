@@ -1,0 +1,71 @@
+<!DOCTYPE html> 
+<html> 
+ <head>  
+ <meta charset="UTF-8">  
+ <title> Обробка замовлення </title>  
+ <link href="css/styles.css" rel="stylesheet">
+ </head>  
+ <body>  
+    <h1>Відбувається обробка замовлення</h1>
+ <canvas id="myCanvas" width="500" height="125" style="border: 1px darkblue dotted; margin-left: 20px;">  
+ </canvas>  
+ <script> 
+     var width = 124, 
+    height = 124, 
+    frames = 4, 
+    currentFrame = 0, 
+    canvas = document.getElementById("myCanvas"); 
+    var ctx = canvas.getContext("2d"); 
+    var positionX=0;
+    var image = new Image(); 
+    image.src = "img/sprite2.png"; 
+    setInterval(function() {
+    ctx.clearRect(0,0,500,300); 
+    ctx.drawImage(image, 0, height * currentFrame, width, height, positionX, 0, width, height);
+    if (currentFrame == frames) {
+    currentFrame = 0;
+    } else {
+    currentFrame++;
+    }
+    positionX++; 
+    if(positionX > 420) {
+    positionX = 0;
+    }
+    },100); 
+   </script>   
+   
+   <div class="root" style="float:left">
+    <form name="form1" >
+        <label for="name" style="margin-left: 40px;">Ваше прізвище</label>
+        <input type="text" name="Priz" id="P" placeholder="Введіть прізвище"style="margin-left: 59px; margin-right: 50px;" />
+        <br>
+        <label for="name" style="margin-left: 40px;">Ваше ім'я </label>
+        <input type="text" name="Name" id="N" placeholder="Введіть ім'я" style="margin-left: 97px; margin-right: 50px;"/>
+        <br>
+        <label for="web" style="margin-left: 40px;">Ваше побатькові</label>
+        <input type="text" name="Poba" id="B" placeholder="Введіть по батькові" style="margin-left: 50px; margin-right: 50px;"/>
+        <br><br><br>
+        <input type="radio" name="group" value="Шини" style="margin-left: 20px;">Шини
+        <input type="radio" name="group" value="Диски">Диски
+        <input type="radio" name="group" value="Фарба">Фарба
+        <input type="radio" name="group" value="Масла">Масла
+        <input type="radio" name="group" value="Інші запчастини">Інші запчастини
+        <br><br>
+        <input type="button" value="Реєстрація" onclick="reg(form1)" style="margin-left: 38px;"><br><br>
+        <input type="text" name="regname">
+        <input type="reset" value="Очистити">
+    </form>
+
+    <script>
+        function reg(form1) {
+            var name1 = +document.getElementById("P").value;
+            var name2 = +document.getElementById("N").value;
+            var name3 = +document.getElementById("B").value;
+            alert("Ваше ім’я: Валковський Євген Дмитрович, обраний товар Масло")     
+        }
+    </script>
+   </div>
+ </body>
+</html>
+
+
