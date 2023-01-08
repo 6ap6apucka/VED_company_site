@@ -1,0 +1,6 @@
+body{
+    background-image: url(../img/Фонзамовлення.jpg);
+}
+#myCanvas{background-origin: 40%; }
+h1{background-color: goldenrod;
+text-align: center;}
