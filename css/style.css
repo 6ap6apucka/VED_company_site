@@ -1,0 +1,293 @@
+body {
+font-family: Raleway, Arial, Helvetica, sans-serif;
+background-color:bisque;
+}
+p {
+font-size: 14px;
+color: #999;
+line-height: 1.6;
+}
+h1 {
+font-size: 33px;
+color: #fff;
+}
+h2 {
+font-size: 28px;
+color:orange;
+}
+h3 {
+font-size: 26px;
+color:greenyellow;
+}
+h2:hover{
+    color: white;
+    background-color: darkviolet;
+    border-radius: 10px;
+    transform: scale(1.2);
+transition: all 0.8s ease-out;    
+}
+.container {
+width: 95%;
+max-width: 1020px;
+margin-left: auto;
+margin-right: auto;
+}
+.brand {
+font-size: 30px;
+}
+.menu {
+padding-left: 0;
+margin-top: 0;
+margin-bottom: 0;
+}
+.menu li {
+float: left;
+font-size: 16px;
+list-style: none;
+}
+.menu li a {
+text-decoration: none;
+}
+header {
+background-color: rgba(255, 255, 255, 0.692);
+
+}
+header .brand {
+float: left;
+color: #59abe3;
+margin-bottom: 30px;
+}
+header .menu {
+float: right;
+margin-bottom: 30px;
+}
+header .menu li {
+padding-left: 20px;
+}
+header .menu li a {
+color: #aaa;
+}
+header .menu li a:hover {
+color: rgb(48, 56, 167);
+text-decoration: overline ;
+}
+.imgui{
+width: 40px;
+height: 40px;
+float:left;
+margin-right: 10px;
+}
+.jumbotron {
+background-image: url(../img/Фура.png);
+background-size: cover;
+background-position: 0 0;
+background-repeat: no-repeat;
+padding-top: 80px;
+padding-bottom: 80px;
+min-height: 250px;
+text-align: center;
+clear: both;
+}
+.jumbotron .button {
+display: inline-block;
+color: rgb(31, 9, 236);
+text-decoration: none;
+font-weight: bold;
+font-size: 18px;
+margin-top: 60px;
+background-color: #5bc0fa;
+padding: 20px 30px;
+border-radius: 30px;
+                                                   
+}
+.jumbotron .button:hover {
+transform: scale(1.2);
+transition: all 0.8s ease-out;                                                   
+}
+                                                   
+.services .service {
+width: 33.333333%;
+float: left;
+padding-left: 15px;
+padding-right: 15px;
+margin-top: 30px;
+margin-bottom: 50px;
+box-sizing: border-box;
+}
+
+.services {
+padding-top: 50px;
+text-align: center;
+}
+.services .fa {
+color: #979797;
+margin-bottom: 15px;
+}
+.blog {
+clear: both;
+padding-top: 50px;
+padding-bottom: 50px;
+background-color: #fcfcfc;
+}
+.blog p{
+    text-align:left;
+}
+.blog h2{
+    text-align:center;
+    padding-top:20px;
+    padding-bottom:30px;
+}
+.blog .post {
+    padding-bottom: 30px;
+padding-top: 30px;
+display: inline-block;
+clear: both;
+}
+.blog h3 {
+margin-top:10px;
+text-align:center;
+}
+.blog .post img {
+float: left;
+margin-right: 30px;
+max-width: 240px;
+max-height: 280px;
+}
+footer h3{
+font-size: 15px;
+color: white;
+}
+
+footer h1{
+    margin-top: 10px;
+}
+footer p{
+font-size: 14px;
+color: #c7c6d1;
+}
+.block-foot-one{
+width: 250px;
+margin-top: -15px;
+float: left;
+margin-left: -50px;
+}
+.block-foot-one p{
+margin: 28px 0 80px 0;
+}
+                                                                                
+.block-foot-two{
+width: 250px;
+margin-top: -35px;
+margin-right: 10px;
+margin-left: 360px;
+}
+.block-foot-two p{
+margin-top: 5px;
+}
+.block-foot-three{
+width: 250px;
+margin-top: -30px;
+
+float: right;
+}
+                                                               
+.blog{display: inline-block; 
+border-radius:20%;
+margin-left:10%;
+margin-bottom:5%;
+padding-bottom: 0.1px;
+padding-left:5%;
+padding-right:5%;
+background-color:#6278b4;
+color:snow;
+}
+
+.blog:hover{
+    background-color: tomato;
+}
+
+.blog p{
+    color: #c7c6d1;
+}
+                                                                                
+footer {
+    height: 250px;
+clear: both;
+padding-top: 50px;
+padding-bottom: 50px;
+text-align: center;
+background-color: #38404b;
+}
+
+@media (max-width: 575px) {
+.services .service {
+width: 100%;
+float: none;
+}
+.blog .post img {
+float: none;
+display: block;
+margin-right: auto;
+margin-left: auto;
+}
+.blog .post {
+max-width: 280px;
+margin-left: auto;
+margin-right: auto;
+display: block;
+}
+}
+img {
+display: block;
+max-width: 100%;
+height: auto;
+}
+a.facebook {
+background-position: left top; 
+background-image: url(../img/sprites.png);
+background-repeat: no-repeat;
+height: 62px;
+ width: 68px;
+display: inline-block;
+margin-right: 10px;
+margin-top: 50px;
+border-radius: 10px;
+margin-bottom: 40px;
+transition: all 0.8s ease-out; 
+}
+a.twitter { 
+background-position: -68px top; 
+background-image: url(../img/sprites.png);
+background-repeat: no-repeat;
+height: 62px;
+width: 68px;
+display: inline-block;
+margin-right: 10px;
+margin-top: 50px;
+border-radius: 10px;
+margin-bottom: 40px;
+transition: all 0.8s ease-out; 
+}
+a.instagram { 
+background-position: -136px top; 
+background-image: url(../img/sprites.png);
+background-repeat: no-repeat;
+height: 62px;
+width: 68px;
+display: inline-block;
+margin-right: 10px;
+margin-top: 50px;
+border-radius: 10px;
+margin-bottom: 40px;
+transition: all 0.8s ease-out; 
+}
+a.instagram:hover {
+background-position-y: bottom;
+}
+
+a.twitter:hover {
+background-position-y: bottom;
+}
+a.facebook:hover {
+background-position-y: bottom;
+}
